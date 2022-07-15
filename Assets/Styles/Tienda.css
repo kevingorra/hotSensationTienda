@@ -1,0 +1,52 @@
+.navegador{
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+}
+.red{
+    position: fixed;
+    top: 200px;
+    z-index: 100;
+    left: 0;
+    width: 50px;   
+}
+.redes{
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    width: 50px; 
+}
+#faceboock a{
+    background-color: #1877f2;
+}
+.redes:hover{
+    padding: 10px 50px;
+}
+#instagram a{
+    background-color:#c32aa3;    
+}
+#twitter a{
+    background-color:#1da1f2;
+}
+#correo a{
+    background-color: #ffb903;
+}
+#whatsapp a{
+    background-color:  #25d366;
+}
+
+.fuente{
+    font-family: 'Mr Dafoe', cursive;
+    font-size: 80px;
+    color: #fff;
+}
+.titulo{
+    padding: 0px 0px 0px 50px;
+}
+.fondo{
+    background-color: black;
+}
+p{
+    color: #fff;
+}
+
