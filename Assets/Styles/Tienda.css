@@ -3,6 +3,9 @@
     z-index: 100;
     width: 100%;
 }
+.tamanoimg{
+    height: 300px;
+}
 .red{
     position: fixed;
     top: 200px;
@@ -46,7 +49,7 @@
 .fondo{
     background-color: black;
 }
-p{
+.letra{
     color: #fff;
 }
 
