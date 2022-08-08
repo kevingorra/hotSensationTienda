@@ -10,7 +10,7 @@
     position: fixed;
     top: 200px;
     z-index: 100;
-    left: 0;
+    right: 0px;
     width: 50px;   
 }
 .redes{
@@ -23,7 +23,8 @@
     background-color: #1877f2;
 }
 .redes:hover{
-    padding: 10px 50px;
+    padding: 30px;
+    text-align-last: center;
 }
 #instagram a{
     background-color:#c32aa3;    
@@ -40,7 +41,6 @@
 
 .fuente{
     font-family: 'Mr Dafoe', cursive;
-    font-size: 80px;
     color: #fff;
 }
 .titulo{
@@ -53,3 +53,39 @@
     color: #fff;
 }
 
+
+.btn-wsp{
+    position:fixed;
+    width:60px;
+    height:60px;
+    line-height: 63px;
+    bottom:25px;
+    right:25px;
+    background:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:35px;
+    z-index:100;
+    transition: all 300ms ease;
+}
+.btn-wsp:hover{
+    background: #fff;
+    color: #20ba5a;
+    text-decoration: none;
+}
+
+.gris{
+    background-color: rgb(159, 150, 150);
+}
+.margen{
+    border: #fff solid 3px;
+   
+    padding: 30px;
+}
+.tamaño{
+    font-size: 100px;
+}
+.letra2{
+    color: black;
+}
