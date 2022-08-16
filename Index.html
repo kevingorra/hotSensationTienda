@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <title>Hot Sensation</title>
 </head>
 <body class="fondo">
@@ -23,47 +24,39 @@
         <div id="instagram"><a href="" class="fa fa-instagram redes"></a></div>
         <div id="twitter"><a href="" class="fa fa-twitter redes"></a></div>
         <div id="correo"><a href="" class="fa fa-envelope redes"></a></div>
-      
-
     </div>
-   
-    <header>
 
-       
+    <header>
         <section class="navegador animate__animated animate__bounceInLeft">
-            <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-                <div class="container-fluid">
-                    <a class="navbar-brand fuente" href="#Pagina">Hot sensation</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+            <nav class="navbar navbar-expand-lg gris  container margen">
+              <button type="button" class="btn btn-outline-light mx-3 ">
+                <a href="#page" class="nav-link active fuente" style="width: 160px;font-size: 25px;">Hot Sensation</a>
+            </button>
+                <div class="ms-auto mx-3">
+                  
+                    
+                    <button type="button" class="btn btn-outline-light  ">
+                        <a href="./Src/views/lubricantes.html" class="nav-link active " style="width: 90px;font-size: 15px;">Lubricantes</a>
                     </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#Inicio">Nosotros</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="/productos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
-                    productos
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="/lubricantes.html">Lubricante</a></li>
-                      <li><a class="dropdown-item" href="/lenceria.html"> Lenceria</a></li>
-                      <li><a class="dropdown-item" href="/juguetes.html">Juguetes</a></li>
-                    </ul>
-                  </li>
-                </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Buscar Productos" aria-label="Search" id="busqueda">
-                  <button class="btn btn-outline-light" type="submit">buscar</button>
-                </form>
-              </div>
+
+                    <button type="button" class="btn btn-outline-light">
+                        <a href="./Src/views/lenceria.html" class="nav-link active " style="width: 90px;font-size: 15px;">Lenceria</a>
+                    </button>
+
+                    <button type="button" class="btn btn-outline-light">
+                        <a href="./Src/views/juguetes.html" class="nav-link active " style="width: 90px;font-size: 15px;">Juguetes</a>
+                    </button>
+                  <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" >
+                    <i class="bi bi-person-circle"></i>
+                 Iniciar Cesion
+                </button>
+             
+      
+                  
+                
             </div>
           </nav>
         </section>
-       
-        <br>
-       
     </header>
     <main class="letra">
         <section>
@@ -73,34 +66,93 @@
        
         <br><br>
 
+        
+
 
         <div class="container">
-          <div class="row">
+          <div class="row ">
             <div class="col-9 align-self-center text-center"><h1 class="animate__animated animate__lightSpeedInLeft fuente titulo tamaño">Hot Sensation</h1></div>
             <div class="col-3"> <img style="height: 200px ;" src="/Assets/Img/logo.gif" alt=""></div>
+         
 
         </div>
 
           <div class="row">
 
-            <div class="col-3 gris">
+            <div class="col-3 gris margen">
 
-                <div class="row margen">
-                    <button type="button" class="btn btn-outline-light">Ofertas</button>
-                    <button type="button" class="btn btn-outline-light">Relatos Eroticos</button>
-                    <button type="button" class="btn btn-outline-light">Formas De Pago</button>
-                    <button type="button" class="btn btn-outline-light">Puntos De Venta</button>
+                <div class="row container mb-4">
+                      <button type="button" class="btn btn-outline-light">
+                          <a href="./Src/views/ofertas.html" class="nav-link active">Ofertas</a>
+                      </button>
+                      <button type="button" class="btn btn-outline-light">
+                          <a href="/Src/views/preguntasFrecuentes.html" class="nav-link active">Preguntas Frecuentes </a>
+                      </button>
+                      <button type="button" class="btn btn-outline-light">
+                          <a href="./Src/views/formasPago.html" class="nav-link active">Formas De Pago </a>
+                      </button>
+                      <button type="button" class="btn btn-outline-light">
+                          <a href="./Src/views/puntosDeVenta.html" class="nav-link active">Puntos De Venta</a>
+                      </button>
+                
                 </div>
-                <div class="row margen">
+                <div class="row margen2">
                     <p >¿ Quieres recibir email de nuestras Ofertas ? </p>
                     <p>¡¡¡ Registrate Ya Mismo !!!</p>
                     <label for="">Correo Electronico :</label>
                     <input type="email" name="" id="" placeholder="Example@gmail.com">
                     <button type="button" class="btn btn-outline-light my-1"><i class="fa-solid fa-bell"></i>  SUSCRIBIRSE</button>
+                    <br><br>
                 </div>
-                <div class="row margen">
+                <div class="row ">
                     <h4 class="text-center">Productos Mas Vendidos</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit rem sapiente rerum itaque? Sit earum numquam perspiciatis, cupiditate expedita hic molestias tenetur dolorem accusantium omnis cumque voluptatum delectus dignissimos modi non fugit cum officia nihil esse. Impedit deleniti omnis in repudiandae quasi culpa, ipsa hic quos neque laudantium possimus rerum repellendus, iure placeat est sed accusamus atque quas modi praesentium et? Quam quod tenetur sunt, minima, natus neque quos obcaecati saepe harum ad nostrum, esse eligendi aspernatur quibusdam consequatur maiores dolores quia non sapiente aliquid delectus iusto at. Deleniti exercitationem nobis, excepturi asperiores impedit provident? Nisi culpa excepturi perspiciatis labore beatae consectetur, velit minus quasi optio. Minima veniam molestias ipsum debitis error placeat ipsam beatae mollitia. Tempora sed tempore delectus beatae. Incidunt ea vero maiores earum accusamus deserunt autem eveniet dignissimos voluptatum. In modi ex qui quod corporis maxime, iusto dolorem repudiandae quaerat distinctio eos impedit quia laudantium obcaecati inventore tenetur officiis, recusandae iste quas eligendi laborum! Atque qui iste id nesciunt exercitationem minus cum illo, nostrum unde deleniti obcaecati laborum veritatis esse! Quod, nesciunt beatae necessitatibus quasi nulla ad? Debitis saepe perferendis illum consectetur omnis rerum facere aliquid earum repudiandae reiciendis tempore corporis ea nesciunt aspernatur nobis, laboriosam fugiat?</p>
+                    
+
+                    <div class="row h-100 my-3">
+                      <div class="col-12 d-flex row bordeproductos">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/kvztiendatcc.appspot.com/o/producto3.jpg?alt=media&token=867469d5-dd60-454e-a3ac-7407a5c6baee" class="d-block tamañoproducto">
+                        <p>Lubricante Electrizante</p>
+                        <p>$ 34.900 COP</p>
+                      </div>
+                      <div class="col-12 d-flex row bordeproductos">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/kvztiendatcc.appspot.com/o/producto7.jpg?alt=media&token=cece7c80-79a9-4ddf-aa15-814505349d1c" class="d-block tamañoproducto">
+                        <p>Lubricante Multiorgasmos</p>
+                        <p>$ 19.900 COP</p>
+                      </div>
+                      <div class="col-12 d-flex row bordeproductos">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/kvztiendatcc.appspot.com/o/producto6.jpg?alt=media&token=f2911618-9a34-444f-aa8f-e0e1023a2e6d" class="d-block tamañoproducto">
+                        <p>Lubricante Anal</p>
+                        <p>$ 35.900 COP</p>
+                      </div>
+                      <div class="col-12 d-flex row bordeproductos">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/kvztiendatcc.appspot.com/o/producto18.webp?alt=media&token=05207aac-c137-4949-8e84-6a20491595b2" class="d-block tamañoproducto">
+                        <p>Body Print Piton</p>
+                        <p>$ 107.900 COP</p>
+                      </div>
+                      <div class="col-12 d-flex row bordeproductos">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/kvztiendatcc.appspot.com/o/producto20.webp?alt=media&token=521b5014-235d-4fed-955b-5f5649f4f476" class="d-block tamañoproducto">
+                        <p>Body Aspacia Marfil</p>
+                        <p>$ 90.900 COP</p>
+                      </div>
+                      <div class="col-12 d-flex row bordeproductos">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/kvztiendatcc.appspot.com/o/producto24.1.webp?alt=media&token=caf6fd6d-a881-4dc4-8baa-b0a7a653c0cf" class="d-block tamañoproducto">
+                        <p>Body Con Copa Y Encaje</p>
+                        <p>$ 85.900 COP</p>
+                      </div>
+                      <div class="col-12 d-flex row bordeproductos">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/kvztiendatcc.appspot.com/o/producto35.1.webp?alt=media&token=e83ea363-a32e-4e3f-81ef-2d6edba01ea0">
+                        <p>Lelo Hula Ocean</p>
+                        <p>$ 821.900 COP</p>
+                      </div>
+                      <div class="col-12 d-flex row bordeproductos">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/kvztiendatcc.appspot.com/o/producto39.1.webp?alt=media&token=b552518f-cf94-4ba2-9f7f-0f78484d61b2" class="d-block tamañoproducto">
+                        <p>Sandee</p>
+                        <p>$ 251.900 COP</p>
+                      </div>
+                      
+                      
+                    </div>
+                   
                 </div>
               
             </div>
@@ -128,11 +180,13 @@
                             <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
                           </div>
                           <div class="carousel-inner">
+                            
                             <div class="carousel-item active" data-bs-interval="10000">
                               <img src="https://firebasestorage.googleapis.com/v0/b/kvztiendatcc.appspot.com/o/producto33.webp?alt=media&token=426980b1-df8b-4346-8458-3fe857c33515" class="d-block w-100" alt="...">
                               <div class="carousel-caption d-none d-md-block">
                                 <h5>First slide label</h5>
                                 <p>Some representative placeholder content for the first slide.</p>
+                              
                               </div>
                             </div>
                             <div class="carousel-item" data-bs-interval="2000">
@@ -196,38 +250,45 @@
                   <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col">
                       <div class="card h-100">
-                        <img src="https://firebasestorage.googleapis.com/v0/b/kvztiendatcc.appspot.com/o/producto1.jpg?alt=media&token=3aa08c52-e7c0-4cdd-9180-1933d8b658ed" class="card-img-top" alt="...">
+                        <a href="./Src/views/lubricantes.html" class="text-muted">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/kvztiendatcc.appspot.com/o/producto1.jpg?alt=media&token=3aa08c52-e7c0-4cdd-9180-1933d8b658ed" class="card-img-top alturacard" alt="...">
                         <div class="card-body">
                           <h5 class="card-title letra2">LUBRICANTES</h5>
                           <p class="card-text letra2">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        </div>
+                        </div>  </a>
                         <div class="card-footer">
                           <small class="text-muted">Last updated 3 mins ago</small>
                         </div>
+                    
                       </div>
                     </div>
                     <div class="col">
-                      <div class="card h-100">
-                        <img src="https://firebasestorage.googleapis.com/v0/b/kvztiendatcc.appspot.com/o/producto25.webp?alt=media&token=ab8807cd-656a-4d0c-9d19-f8c813542936" class="card-img-top" alt="...">
+                      <div class="card h-100 ">
+                        <a href="/Src/views/lenceria.html" class="text-muted">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/kvztiendatcc.appspot.com/o/producto25.webp?alt=media&token=ab8807cd-656a-4d0c-9d19-f8c813542936" class="card-img-top alturacard" alt="...">
                         <div class="card-body">
                           <h5 class="card-title letra2">LENCERIA</h5>
                           <p class="card-text letra2">This card has supporting text below as a natural lead-in to additional content.</p>
-                        </div>
+                        </div></a>
                         <div class="card-footer">
                           <small class="text-muted">Last updated 3 mins ago</small>
                         </div>
+                      
                       </div>
                     </div>
                     <div class="col">
                       <div class="card h-100">
-                        <img src="https://firebasestorage.googleapis.com/v0/b/kvztiendatcc.appspot.com/o/producto35.webp?alt=media&token=71a98767-0144-4f7c-8bef-2c18850a4ec3" class="card-img-top" alt="...">
+                        <a href="/Src/views/juguetes.html" class="text-muted">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/kvztiendatcc.appspot.com/o/producto35.webp?alt=media&token=71a98767-0144-4f7c-8bef-2c18850a4ec3" class="card-img-top alturacard" alt="...">
                         <div class="card-body">
-                          <h5 class="card-title letra2">JUEGUETES</h5>
+                          <h5 class="card-title letra2">JUGUETES</h5>
                           <p class="card-text letra2">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                         </div>
+                      </a>
                         <div class="card-footer">
                           <small class="text-muted">Last updated 3 mins ago</small>
                         </div>
+                      
                       </div>
                     </div>
                   </div>
@@ -235,18 +296,55 @@
 
                 </div>
                 <div class="row margen">
-                  <di class="col-6 text-center">
-                    <h1>marcas</h1>
-                  </di>
+                  <div class="col-6 text-center align-self-center ">
+                    <h1>Marcas</h1>
+                    <table class="align-self-center">
+                      <tr>
+                        <td><img src="/Assets/Img/marca1.webp" class="fotomarca"></td>
+                        <td><img src="/Assets/Img/marca2.webp" class="fotomarca"></td>
+                        <td><img src="/Assets/Img/marca3.webp" class="fotomarca"></td>
+                      </tr>
+                      <tr>
+                        <td><img src="/Assets/Img/marca4.webp" class="fotomarca"></td>
+                        <td><img src="/Assets/Img/marca5.webp" class="fotomarca"></td>
+                        <td><img src="/Assets/Img/marca6.webp" class="fotomarca"></td>
+                      </tr>
+                    </table>
+                  </div>
                  
-                  <di class="col-6 text-center">
-                    <h1>envios</h1>
-                  </di>
+                  <div class="col-6 text-center">
+                    <h1>Envios</h1>
+                    <h6>Nuestros envios se hacen con nuestra transportadora aliada TCC</h6>
+                   <div class="row my-5">
+                    <div class="col-6 fondorojo">
+                      <img src="/Assets/Img/envio-removebg-preview.png" class="fotoenvio mx-3">
+                    </div>
+                    <div class="col-6 fondorojo">
+                     
+                      <p>tiempo de entrega de 2 a 3 dias habiles</p> 
+                      <p>Entregamos en toda Colombia</p>
+                      <p>Rastreo de guias </p> 
+                      <p>Pagos Contraentrega</p> 
+                  
+                    </div>
+                   </div>
+                   
+                  </div>
                 </div>
                 <div class="row margen">
-                  <di class="col-6 text-center">
-                    <h1>preguntas frecuentes</h1>
-                  </di>
+                  <div class="col-6 text-center">
+                    <a href="/Src/views/preguntasFrecuentes.html"><img src="/Assets/Img/preguntas.jpg" class="tamañopregunta" alt=""></a>
+                    
+                  </div>
+                  <div class="col-5">
+                    <span>
+                      <textarea name="texto" rows="4" cols="40" placeholder="Dejanos Tu Pregunta"></textarea>
+                      <input type="submit" value="enviar">
+                    <br><br><br>
+                    </span>
+                    
+                  </div>
+                 
                 </div>
 
 
@@ -264,23 +362,67 @@
 
 
         </div>
+      
     </main>
+
+    <section>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header">
+            <h1 class="offcanvas-title" id="offcanvasExampleLabel">Iniciar Seccion</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="container my-5">
+
+          
+                      <h3>Acceder a mi Cuenta</h3>
+                      <br><br>
+                      
+                    
+                          <div class="input-group flex-nowrap ">
+                              <span class="input-group-text " id="addon-wrapping"><i class="bi bi-envelope-plus letra2 "></i></span>
+                              <input id="email" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+                            </div>
+                            <hr>
+                            <div class="input-group flex-nowrap">
+                              <span class="input-group-text" id="addon-wrapping"><i class="bi bi-key letra2"></i></span>
+                              <input id="password" type="password" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="addon-wrapping">
+                              <span class="input-group-text" id="addon-wrapping"><i class="bi bi-eye letra2"></i></span>
+                            </div>
+                            <br>
+                            <div class="row">
+                              <div class="col-md-2"><input type="checkbox" name="" id=""></div>
+                              <div class="col-md-10"><p><a href="https://www.zoetis.com/global-assets/private/zoetis-argentina-terms-and-conditions-of-purchase.pdf">Acepto Terminos y Condiciones </a></p></div>
+                            </div>
+                        
+                            <hr>
+                            <button  type="submit" class="btn btn-primary " id="registro"><i class="bi bi-person-check-fill"></i> Registrarse</button>
+                            <br><br>
+                            <div class="container text-center">
+                            <h5 style="font-size: 18px;"><a href="./Src/views/registro.html">No Estoy Registrado Quiero Crear una   <i class="bi bi-person-plus-fill letra2"></i> Cuenta </a></h5></div>
+                            
+  
+  
+  
+                    
+  
+                  </div>
+              </div>
+          </div>
+  
+          </div>
+      </div>
+  </section>
     
 </body>
-<footer class="letra">
+<br><br>
+<footer class="letra gris margen container">
     <section class="container text-center">
-        <div class="row">
-            <div class="col-6"><h1>Derechos Reservados de Autor</h1></div>
-            <div class="col-6"><h2>Kevin Valencia Zuleta</h2></div>
-        </div>
-        <div class="row">
-            <div class="col-6">
-                <h3>Git Hub</h3>
-            </div>
-            <div class="col-6">
-                <p>enlace</p>
-            </div>
-        </div>
+      <div class="row">
+          <h5><i class="fa-solid fa-copyright"></i> Hot Sensation 2022 .Todos Los Derechos Reservados</h5>
+          <h6 class="">Desarrollado con <img src="/Assets/Img/corazon-removebg-preview.png " class="alturacorazon"> Por Kevin Valencia Zuleta </h6>
+          <a href="https://github.com/kevingorra"><h6>Git Hub</h6></a>
+      </div>
     </section>
 
 

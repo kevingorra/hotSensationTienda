@@ -14,9 +14,9 @@ export function pintarProductos1(productos){
         let nombreProducto=document.createElement("h3")
         nombreProducto.classList.add('fw-bold')
         nombreProducto.textContent=producto.nombre
-        let precioProducto=document.createElement("h2")
+        let precioProducto=document.createElement("h4")
         precioProducto.classList.add('fw-bold')
-        precioProducto.textContent= '$ '+producto.precio+ ' COP'
+        precioProducto.textContent=producto.precio
         let descripcionproducto=document.createElement("p")
         descripcionproducto.classList.add('d-none')
         descripcionproducto.textContent=producto.descripcion
