@@ -11,14 +11,14 @@ if (carrito==null){
         pintarResumenCompra(producto.foto,producto.nombre,false,true,producto.precio,true,producto.cantidad,true,true) 
         totalvlr=totalvlr+(Number(producto.precio)*Number(producto.cantidad))
         let total =document.getElementById('totalcompra')
-        total.textContent='total: '+totalvlr
+        total.textContent='Total: $ '+totalvlr+' COP'
         let botonDolar=document.getElementById('btnDolar')
         botonDolar.addEventListener('click',function(evento){
-            total.textContent='Total: '+ (totalvlr/4000)
+            total.textContent='Total: $ '+ (totalvlr/4000)+ " USD"
         })
         let botonMoneda=document.getElementById('btnMoneda')
         botonMoneda.addEventListener('click',function(evento){
-        total.textContent='Total: '+ (totalvlr)
+        total.textContent='Total: $ '+ (totalvlr)+ " COP"
         })
        
 })
