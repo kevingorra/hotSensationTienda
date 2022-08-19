@@ -299,7 +299,7 @@ i{
 }
 
 .tamañoproducto{
-    height: 110px;
+    height: 180px;
 
 }
 
@@ -310,3 +310,15 @@ i{
 .alturacorazon{
     height: 20px;
 }
+.imagenpequeña{
+	height: 80px;
+}
+.total{
+    position: fixed;
+    top: 200px;
+    z-index: 100;
+	left: 720px;
+   
+    width: 50px;   
+}
+

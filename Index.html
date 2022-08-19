@@ -55,6 +55,17 @@
                   
                 
             </div>
+            <div class="nav-item mx-5">
+              <a class="nav-link active"  href="/Src/views/resumenCompra.html">
+                <span><i class="bi bi-cart3 fs-2"></i></span>
+                  <span class="position-absolute top-10 start-10 translate-middle badge rounded-pill bg-danger" id="carrito1">
+
+                  </span>
+                
+              </a>
+            </div>
+
+
           </nav>
         </section>
     </header>
@@ -91,19 +102,22 @@
                       <button type="button" class="btn btn-outline-light">
                           <a href="./Src/views/formasPago.html" class="nav-link active">Formas De Pago </a>
                       </button>
-                      <button type="button" class="btn btn-outline-light">
-                          <a href="./Src/views/puntosDeVenta.html" class="nav-link active">Puntos De Venta</a>
-                      </button>
+                  
                 
                 </div>
-                <div class="row margen2">
+                <div class="row margen2 " id="suscrito">
+          
                     <p >¿ Quieres recibir email de nuestras Ofertas ? </p>
                     <p>¡¡¡ Registrate Ya Mismo !!!</p>
                     <label for="">Correo Electronico :</label>
-                    <input type="email" name="" id="" placeholder="Example@gmail.com">
-                    <button type="button" class="btn btn-outline-light my-1"><i class="fa-solid fa-bell"></i>  SUSCRIBIRSE</button>
+                    <input type="email" name="email" id="correo1" placeholder="Example@gmail.com">
+                    <button type="button" class="btn btn-outline-light my-1" id="agregar"><i class="fa-solid fa-bell"></i>  SUSCRIBIRSE</button>
+                    <div class="alert alert-primary my-3 invisible strong" role="alert" id="alerta">
+                      Suscrito Con Exito
+                    </div>
                     <br><br>
                 </div>
+           
                 <div class="row ">
                     <h4 class="text-center">Productos Mas Vendidos</h4>
                     
@@ -140,7 +154,7 @@
                         <p>$ 85.900 COP</p>
                       </div>
                       <div class="col-12 d-flex row bordeproductos">
-                        <img src="https://firebasestorage.googleapis.com/v0/b/kvztiendatcc.appspot.com/o/producto35.1.webp?alt=media&token=e83ea363-a32e-4e3f-81ef-2d6edba01ea0">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/kvztiendatcc.appspot.com/o/producto35.1.webp?alt=media&token=e83ea363-a32e-4e3f-81ef-2d6edba01ea0" class="d-block tamañoproducto" >
                         <p>Lelo Hula Ocean</p>
                         <p>$ 821.900 COP</p>
                       </div>
@@ -184,23 +198,23 @@
                             <div class="carousel-item active" data-bs-interval="10000">
                               <img src="https://firebasestorage.googleapis.com/v0/b/kvztiendatcc.appspot.com/o/producto33.webp?alt=media&token=426980b1-df8b-4346-8458-3fe857c33515" class="d-block w-100" alt="...">
                               <div class="carousel-caption d-none d-md-block">
-                                <h5>First slide label</h5>
-                                <p>Some representative placeholder content for the first slide.</p>
+                                <h5 class="bg-danger">Juguetes 30% de descuento los Martes</h5>
+                                <p class="bg-danger">Aplica Condicciones y Restrinciones</p>
                               
                               </div>
                             </div>
                             <div class="carousel-item" data-bs-interval="2000">
                               <img src="https://firebasestorage.googleapis.com/v0/b/kvztiendatcc.appspot.com/o/producto16.1.webp?alt=media&token=d0abdbbd-d04b-4dbf-ae78-21ff91096d3d" class="d-block w-100" alt="...">
                               <div class="carousel-caption d-none d-md-block">
-                                <h5>Second slide label</h5>
-                                <p>Some representative placeholder content for the second slide.</p>
+                                <h5 class="bg-danger">Lenceria 20% de Descuento</h5>
+                                <p class="bg-danger">Por la compra de 5 Productos o mas ...</p>
                               </div>
                             </div>
                             <div class="carousel-item">
-                              <img src="https://firebasestorage.googleapis.com/v0/b/kvztiendatcc.appspot.com/o/producto38.webp?alt=media&token=36698c38-808d-4378-b40b-2d0a45a1194d" class="d-block w-100" alt="...">
+                              <img src='https://firebasestorage.googleapis.com/v0/b/kvztiendatcc.appspot.com/o/producto5.jpg?alt=media&token=a2fd1ea6-97a5-41cc-899a-2e1dc5da8758' class="d-block w-100" alt="...">
                               <div class="carousel-caption d-none d-md-block">
-                                <h5>Third slide label</h5>
-                                <p>Some representative placeholder content for the third slide.</p>
+                                <h5 class="bg-danger">Lubricantes 15% de Descuento</h5>
+                                <p class="bg-danger">Por compras Superiores a 1 millon de pesos </p>
                               </div>
                             </div>
                           </div>
@@ -381,22 +395,25 @@
                     
                           <div class="input-group flex-nowrap ">
                               <span class="input-group-text " id="addon-wrapping"><i class="bi bi-envelope-plus letra2 "></i></span>
-                              <input id="email" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+                              <input id="registro3" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
                             </div>
                             <hr>
                             <div class="input-group flex-nowrap">
-                              <span class="input-group-text" id="addon-wrapping"><i class="bi bi-key letra2"></i></span>
-                              <input id="password" type="password" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="addon-wrapping">
+                              <span class="input-group-text" id="registro"><i class="bi bi-key letra2"></i></span>
+                              <input id="registro2" type="password" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="addon-wrapping">
                               <span class="input-group-text" id="addon-wrapping"><i class="bi bi-eye letra2"></i></span>
                             </div>
                             <br>
                             <div class="row">
-                              <div class="col-md-2"><input type="checkbox" name="" id=""></div>
+                              <div class="col-md-2"><input type="checkbox" name="" id="registro"></div>
                               <div class="col-md-10"><p><a href="https://www.zoetis.com/global-assets/private/zoetis-argentina-terms-and-conditions-of-purchase.pdf">Acepto Terminos y Condiciones </a></p></div>
                             </div>
                         
                             <hr>
-                            <button  type="submit" class="btn btn-primary " id="registro"><i class="bi bi-person-check-fill"></i> Registrarse</button>
+                            <button  type="reset" class="btn btn-primary " id="registro1"><i class="bi bi-person-check-fill"></i> Registrarse</button>
+                            <div class="alert alert-primary my-3 invisible strong" role="alert" id="alerta1">
+                              Registrado  Con Exito
+                            </div>
                             <br><br>
                             <div class="container text-center">
                             <h5 style="font-size: 18px;"><a href="./Src/views/registro.html">No Estoy Registrado Quiero Crear una   <i class="bi bi-person-plus-fill letra2"></i> Cuenta </a></h5></div>

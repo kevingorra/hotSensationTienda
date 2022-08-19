@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <title>Hot Sensation</title>
 </head>
 <body class="fondo">
@@ -26,42 +27,47 @@
     </div>
    
     <header>
+      <section class="navegador animate__animated animate__bounceInLeft">
+          <nav class="navbar navbar-expand-lg gris  container margen">
+            <button type="button" class="btn btn-outline-light mx-3 ">
+              <a href="/Index.html" class="nav-link active fuente" style="width: 160px;font-size: 25px;">Hot Sensation</a>
+          </button>
+              <div class="ms-auto mx-3">
+                
+                  
+                  <button type="button" class="btn btn-outline-light  ">
+                      <a href="/Src/views/lubricantes.html" class="nav-link active " style="width: 90px;font-size: 15px;">Lubricantes</a>
+                  </button>
 
-       
-        <section class="navegador animate__animated animate__bounceInLeft ">
-            <nav class="navbar navbar-expand-lg  navbar-dark gris container margen">
-                <div class="container-fluid">
-                    <a class="navbar-brand fuente" href="/Index.html#Pagina">Hot sensation</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/Index.html#Inicio">Nosotros</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="/productos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
-                    productos
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="/lenceria.html"> Lenceria</a></li>
-                      <li><a class="dropdown-item" href="/juguetes.html">Juguetes</a></li>
-                    </ul>
-                  </li>
-                </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Buscar Productos" id="busqueda">
-                  <button class="btn btn-outline-light" type="search">buscar</button>
-                </form>
-              </div>
-            </div>
-          </nav>
-        </section>
-       
-        <br>
-       
-    </header>
+                  <button type="button" class="btn btn-outline-light">
+                      <a href="/Src/views/lenceria.html" class="nav-link active " style="width: 90px;font-size: 15px;">Lenceria</a>
+                  </button>
+
+                  <button type="button" class="btn btn-outline-light">
+                      <a href="/Src/views/juguetes.html" class="nav-link active " style="width: 90px;font-size: 15px;">Juguetes</a>
+                  </button>
+                <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" >
+                  <i class="bi bi-person-circle"></i>
+               Iniciar Cesion
+              </button>
+              
+           
+    
+                
+              
+          </div>
+          <div class="nav-item mx-5">
+            <a class="nav-link active"  href="./resumenCompra.html">
+              <span><i class="bi bi-cart3 fs-2"></i></span>
+                <span class="position-absolute top-10 start-10 translate-middle badge rounded-pill bg-danger" id="carrito1">
+
+                </span>
+              
+            </a>
+          </div>
+        </nav>
+      </section>
+  </header>
     <main class="container">
         <section>
             <video class="w-100 videoalto"  src="/Assets/Video/videobanner2.mp4" muted autoplay loop></video>
@@ -90,7 +96,7 @@
                       <button type="button" class="btn btn-outline-light">Ofertas</button>
                       <button type="button" class="btn btn-outline-light"><a href="/Src/views/preguntasFrecuentes.html" class="nav-link active">Preguntas Frecuentes </a></button>
                       <button type="button" class="btn btn-outline-light">Formas De Pago</button>
-                      <button type="button" class="btn btn-outline-light">Puntos De Venta</button>
+                  
                   </div>
                   <div class="row margen2">
                       <p >¿ Quieres recibir email de nuestras Ofertas ? </p>
@@ -153,6 +159,10 @@
                 
               </div>
               <div class="col-9 margen">
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Buscar Productos" id="busqueda">
+                  <button class="btn btn-outline-light" type="search">buscar</button>
+                </form>
   
             <div class="container my-5"><div id="fila1" class="row row-cols-1 row-cols-md-2 g3"></div></div>  
           </div>

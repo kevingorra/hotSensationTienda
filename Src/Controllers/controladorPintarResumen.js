@@ -7,23 +7,23 @@ export function pintarResumenCompra(fotourl,nombreMensaje,banderaBoton,banderaPr
     fila.classList.add('row','shadow','bg-dark','p-4','text-light','w-100','h-75')
 
     let columna1=document.createElement('div')
-    columna1.classList.add('col-12', 'col-md-6','border-end')
+    columna1.classList.add('col-12', 'col-md-6','border-end' , 'text-center')
 
     let columna2=document.createElement('div')
-    columna2.classList.add('col-12', 'col-md-6')
+    columna2.classList.add('col-12', 'col-md-6', 'align-self-center')
 
 
 
     let foto=document.createElement('img')
-    foto.classList.add('img-fluid','w-100','h-100')
+    foto.classList.add('img-fluid','w-50','h-100')
     foto.src=fotourl
     
     let nombre=document.createElement('h3')
-    nombre.classList.add('text-center')
+    nombre.classList.add('text-none')
     nombre.textContent=nombreMensaje
 
     let boton=document.createElement('a')
-    boton.classList.add('btn', 'btn-primary', 'w-100')
+    boton.classList.add('btn', 'btn-primary', 'w-50')
     boton.textContent='Ir a La Tienda'
     boton.setAttribute('href','../../index.html')
 

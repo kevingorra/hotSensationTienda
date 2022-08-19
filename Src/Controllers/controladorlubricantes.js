@@ -5,7 +5,7 @@ import{buscarProductos1}from './controladorBuscar.js';
 buscarProductos1()
 import {crearProducto  } from "./crearProducto.js";
 
-// document.getElementById('carrito1').innerHTML=localStorage.getItem('cantCarrito')
+document.getElementById('carrito1').innerHTML=localStorage.getItem('cantCarrito')
 
 let contenedor=document.getElementById('fila1')
 contenedor.addEventListener('click',function(evento){
